@@ -1,9 +1,10 @@
 import { Component, OnInit, Signal, inject } from '@angular/core';
-import { MoviesService } from '../shared/services/movies/movies.service';
-import { Movie, movieId } from '../shared/models/movies.model';
+
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { movieId, Movie } from '@models/movies.model';
 import { DurationPipe } from '@pipes/duration/duration.pipe';
 import { MillionPipe } from '@pipes/million/million.pipe';
+import { MoviesService } from '@services/movies/movies.service';
 
 @Component({
   selector: 'app-details',
