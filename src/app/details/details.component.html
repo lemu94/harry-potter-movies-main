@@ -1,0 +1,35 @@
+<div class="login-page">
+  <button class="flat-button" [routerLink]="['/movies']">Back</button>
+  <div class="form">
+    <h1>{{ oneMovie().title }}</h1>
+    <div class="container">
+      <div class="small-column">
+        <img width="70%" [src]="oneMovie().poster" />
+      </div>
+      <div class="large-column"><b>Summary</b> {{ oneMovie().summary }}</div>
+    </div>
+  </div>
+  <div [align]="'center'"><h3>Details</h3></div>
+  <table class="custom-table">
+    <tr>
+      <td class="small-column-table">Box Office</td>
+      <td class="large-column-table">{{ oneMovie().box_office | million }}</td>
+    </tr>
+    <tr>
+      <td class="small-column-table">Budget</td>
+      <td class="large-column-table">{{ oneMovie().budget | million }}</td>
+    </tr>
+    <tr>
+      <td class="small-column-table">Duration</td>
+      <td class="large-column-table">{{ oneMovie().duration | duration }}</td>
+    </tr>
+    <tr>
+      <td class="small-column-table">Producers</td>
+      <td class="large-column-table">{{ oneMovie().producers }}</td>
+    </tr>
+    <tr>
+      <td class="small-column-table">Cinematographers</td>
+      <td class="large-column-table">{{ oneMovie().cinematographers }}</td>
+    </tr>
+  </table>
+</div>

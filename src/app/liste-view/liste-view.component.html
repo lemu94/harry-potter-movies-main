@@ -1,0 +1,25 @@
+<div id="ct-content">
+  <div class="prodListDisplay">
+    <ul>
+      @for (item of getMovies(); track item.id) {
+
+      <li>
+        <span class="container">
+          <p>
+            <b>{{ item.title }}</b>
+          </p>
+
+          <button class="flat-button" (click)="voirPlus(item.id)">
+            Details
+          </button>
+        </span>
+        <span class="details">Release Date : {{ item.release_date }} </span>
+
+        <span class="details">Budget : {{ item.budget | million }}</span>
+
+        <span class="details">Duration : {{ item.duration | duration }} </span>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

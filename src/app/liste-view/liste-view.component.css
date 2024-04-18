@@ -1,0 +1,57 @@
+.flat-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond transparent */
+  color: #333; /* Couleur du texte */
+  border: 1px solid #333; /* Bordure de 1 pixel solide */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Supprimer la décoration du texte */
+  cursor: pointer; /* Curseur de la souris en forme de main */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition douce */
+}
+
+.flat-button:hover {
+  background-color: #333; /* Couleur de fond au survol */
+  color: #fff; /* Couleur du texte au survol */
+  border-color: #333; /* Bordure au survol */
+}
+.details {
+  margin-right: 10px;
+  font-size: medium;
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* Répartit les éléments sur la ligne, le premier à gauche et le second à droite */
+  align-items: center; /* Centre les éléments verticalement */
+  margin-bottom: -25px;
+}
+.container button {
+  cursor: pointer;
+}
+/* IE7 */
+
+/* General */
+
+/* Trolley content - Product listing */
+#ct-content {
+  width: 50%;
+  font-size: x-large;
+  margin: 0 auto;
+  clear: both;
+
+  opacity: 1;
+
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+#ct-content h1 {
+  text-align: center;
+}
+#ct-content .unitPrice {
+  display: none;
+}
+
+/* Product Item */

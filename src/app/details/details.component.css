@@ -1,0 +1,57 @@
+.flat-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond transparent */
+  color: #333; /* Couleur du texte */
+  border: 1px solid #333; /* Bordure de 1 pixel solide */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Supprimer la décoration du texte */
+  cursor: pointer; /* Curseur de la souris en forme de main */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition douce */
+}
+.container {
+  display: flex;
+  color: black;
+}
+
+.small-column {
+  flex: 1; /* La petite colonne prendra 1 part de l'espace disponible */
+}
+
+.large-column {
+  flex: 2; /* La grande colonne prendra 2 parts de l'espace disponible */
+}
+.table-container {
+  display: flex;
+  flex-direction: column; /* Affiche les lignes verticalement */
+}
+
+.row {
+  display: flex;
+  border: 2px;
+}
+
+.small-cell {
+  flex: 1; /* La petite colonne prendra 1 part de l'espace disponible */
+}
+
+.large-cell {
+  flex: 2; /* La grande colonne prendra 2 parts de l'espace disponible */
+}
+.custom-table {
+  width: 100%; /* Largeur totale du tableau */
+  border-collapse: collapse; /* Fusionner les bordures des cellules */
+}
+
+.small-column-table {
+  width: 100px; /* Largeur de la colonne petite */
+  height: 30px;
+  text-align: end;
+  border: 1px solid black; /* Bordure de la colonne petite */
+  font-weight: bold;
+}
+
+.large-column-table {
+  /* La colonne large prendra le reste de l'espace disponible */
+  border: 1px solid black; /* Bordure de la colonne large */
+}

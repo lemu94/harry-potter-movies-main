@@ -1,0 +1,29 @@
+<div class="login-page">
+  <div class="form">
+    <strong>Filters</strong>
+    <br />
+    <br />
+    <form class="login-form">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        type="text"
+        placeholder=""
+        (input)="onInputTitle(refTitleMovie.value)"
+        #refTitleMovie
+      />
+
+      <label for="Year">Release Year</label>
+      <input
+        id="Year"
+        type="number"
+        placeholder=""
+        #refReleaseMovie
+        (input)="onInputYear(refReleaseMovie.value)"
+      />
+    </form>
+  </div>
+</div>
+
+<app-liste-view [titleMovie]="titleMovie" [releaseMovie]="releaseMovie">
+</app-liste-view>
